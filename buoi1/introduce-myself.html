@@ -11,10 +11,12 @@
     <section>
         <p>Thông Tin Chính</p>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7zEEISvcs1XuhHOPNI0aUElsa46Fmv5NLDg&s" alt="">
-        <p>Họ Và Tên : Hoàng Anh Dũng</p>
-        <p>Tuổi: 21</p>
-        <p>Nghề Nghiệp: Sinh Viên</p>
-        <h2>email: <u>dung@gmail.com</u></h2>
+        <ul>
+            <li>Họ Và Tên: Hoàng Anh Dũng</li>
+            <li>Tuổi: 21</li>
+            <li>Nghề Ngiệp: Sinh Viên</li>
+            <li><u>Email: dung@gmail.com</u></li>
+        </ul>
 
     </section>
     <hr/>
@@ -64,12 +66,47 @@
     </section>
     <hr/>
     <section>
+        <h2>Sở Thích</h2>
+        <ul>
+            <li>Đá bóng</li>
+            <li>Cầu lông</li>
+            <li>Bơi lội</li>
+        </ul>
+    </section>
+    <hr/>
+    <section>
         <h2>Liên Hệ</h2>
         <ul>
             <!-- a=anchor -->
              <!-- href -->
             <li>facebook: <a href="https://www.facebook.com/profile.php?id=100026522798699">facebook</a></li>
             <li>Github: <a href="https://github.com/DungHP16052003">Github</a></li>
+            <form action="URL" method="post">
+                <div>
+                    <label for="name">Tên</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div>
+                    <label for="email">Tên Email</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label>Giới tính</label>
+                    <div>
+                        <input type="radio" id="nam" name="gioitinh" value="nam">
+                        <label for="nam">Nam</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="nu" name="gioitinh" value="nu">
+                        <label for="nu">Nữ</label>
+                    </div>
+                </div>
+                
+                <button type="submit">Gửi</button>
+            </form>
+            
         </ul>
     </section>
     <hr/>
