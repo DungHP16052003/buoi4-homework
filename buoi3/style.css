@@ -1,0 +1,18 @@
+h1{
+    width: 100px;
+    background-color: greenyellow;
+}
+.deseration{
+    font-size: 30px;
+    font-weight: 400;
+    /* font-style: italic; */
+    font-family: "Rubik Wet Paint", system-ui;
+    background-color: yellowgreen;
+    /* text-decoration: line-through; */
+    /* text-transform: capitalize; */
+    text-align: center;
+    vertical-align: auto;
+}
+a{
+    text-decoration: none;
+}
