@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+      box-sizing: border-box;
+      /* universal selector: Độ ưu tiên thấp nhất */
+    }
+
+        .left-content, .right-content{
+            display: inline-block;
+        }
+        .user-card{
+            width: 560px;
+            height: 300px;
+            background-color: aqua;
+            padding: 50px;
+        }
+        .left-content{
+             width:114px ;
+             height: 114px;
+             vertical-align: top;
+             background-color: blue;
+             margin-right: 10px;
+             
+        }
+        .right-content{
+            width: 330px;
+            height: 100%;
+            background-color: green;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="user-card">
+        <div class="left-content"></div>
+        <div class="right-content"></div>
+    </div>
+
+</body>
+</html>
