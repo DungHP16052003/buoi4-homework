@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            display: flex;
+            position: relative;
+            justify-content: center;
+        }
+
+        .header::before,
+        .header::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+        }
+
+        .header::before {
+          border-bottom: 2px solid black ;
+          left: 40%;
+          right: 40%;
+        }
+        .header::after{
+            border-bottom: 2px dashed black ;
+           left: 10%;
+           right: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="header">About Us</h2>
+</body>
+
+</html>

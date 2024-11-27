@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line{
+           font-weight: 700px;
+        }
+        p::first-letter{
+            font-size: 44px;
+        }
+        input[name="username"]::placeholder{
+            color: green;
+        }
+        /* li::marker{
+            color: red;
+        } */
+        li:nth-last-child(odd)::marker{
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates tempore excepturi quo eaque! Magni
+        ducimus dolores rem aliquam excepturi.</p>
+       <input type="text" name="username" id="" placeholder="username">
+       <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+       
+       </ul>
+</body>
+
+</html>
