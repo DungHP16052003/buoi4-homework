@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Neurial Grotesk", sans-serif;
+}
+body {
+  font-size: 1.6rem;
+}
+.btn {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  align-items: center;
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+}
+.btn_logIn {
+  width: 102px;
+  height: 44px;
+  background-color: rgba(11, 13, 33, 1);
+  font-size: 18px;
+  border-radius: 4px;
+}
+.menu {
+  gap: 55px;
+}
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 0;
+}
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+header li a {
+  width: 71px;
+  height: 28px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(255, 238, 0, 1);
+  }
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 130px;
+  h1 {
+    font-size: 57px;
+    font-weight: 800;
+    line-height: 66px;
+    width: 470px;
+    height: 198px;
+    color: rgba(11, 13, 33, 1);
+    margin-bottom: 14px;
+  }
+  p {
+    width: 470px;
+    height: 84px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(11, 13, 33, 1);
+    margin-bottom: 40px;
+  }
+}
+.btn_Start_Learning {
+  width: 194px;
+  height: 58px;
+  border-radius: 8px;
+  background-color: rgba(11, 13, 33, 1);
+  align-items: center;
+  font-size: 18px;
+}
+.btn_Explore_Courses {
+  width: 213px;
+  height: 58px;
+  border-radius: 8px;
+  background-color: rgba(11, 13, 33, 1);
+  align-items: center;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-bottom: 98px;
+}
+.stars {
+  width: 172px;
+  height: 28px;
+  span{
+    width: 28px;
+    height: 28px;
+    color: rgba(253, 191, 28, 1);
+  }
+  p{
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+width: 198px;
+height: 28px;
+  }
+}
+

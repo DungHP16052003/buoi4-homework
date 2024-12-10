@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+		}
+
+		ul,
+		ol {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			list-style-type: none;
+		}
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+
+		.container {
+			width: 1170px;
+			max-width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			gap: 50px;
+
+			img {
+				width: 70px;
+				height: 50px;
+			}
+
+		}
+
+		.d-flex {
+			display: flex;
+		}
+
+		.justify-between {
+			justify-content: space-between;
+		}
+
+		.justify-end {
+			justify-content: flex-end;
+		}
+
+		.align-center {
+			align-items: center;
+		}
+
+		/* header */
+		header {
+			background-color: #ffff;
+			padding: 24px 0;
+			z-index: 99;
+		}
+
+		header .menu {
+			column-gap: 24px;
+		}
+
+		header .menu-item {
+			position: relative;
+			padding: 24px 12px;
+		}
+
+		header .menu-item:hover::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 100%;
+			width: 160px;
+			height: 26px;
+			background-color: green;
+		}
+
+		header .menu-item:hover::before {
+			content: "";
+			width: 100vw;
+			height: 100vh;
+			background-color: rgba(0, 0, 0, 0.3);
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 60px;
+			z-index: -1;
+
+		}
+
+		header .menu__sub-menu {
+			display: none;
+			position: absolute;
+			top: calc(100% + 24px);
+			left: 0;
+			background-color: #fff;
+			width: 160px;
+			padding: 24px;
+			box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+			z-index: 0;
+		}
+
+		header .menu-item:last-child .menu__sub-menu {
+			right: 0;
+			/* left: unset; */
+			left: -100%;
+		}
+
+		header .menu-item:hover .menu__sub-menu {
+			display: block;
+
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<a href="#" class="header__banner align-center">
+			<img width="1920" height="44" src="https://media.canifa.com/popup/b/l/blacknov_fixtop_desktop-29.11.webp"
+				alt="">
+		</a>
+		<div class="container d-flex align-center">
+			<img src="https://cdn.haitrieu.com/wp-content/uploads/2022/05/Logo-Canifa-Red-635x244.png" alt="logo"
+				class="logo" />
+			<nav>
+				<ul class="menu d-flex align-center">
+					<li class="menu-item"><a class="menu__link" href="">BLACK NOVEMBER</a></li>
+					<li class="menu-item">
+						<a class="menu__link" href="">NỮ</a>
+						<div class="menu__sub-menu">
+							<div class="sub-menu-item">
+								<div class="sub-menu-item1">
+									<ul class="item">
+										<li><a href=""><b>Hàng mới về</b></a></li>
+										<li><a href="">Hàng mới về</a></li>
+										<li><a href="">Hyper Prep</a></li>
+										<li><a href="">Knit wear</a></li>
+										<li><a href="">City Nomad</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div>
+					</li>
+					<li class="menu-item">
+						<a class="menu__link" href="">NAM</a>
+						<div class="menu__sub-menu">
+							<div class="sub-menu-item">
+								<div class="sub-menu-item1">
+									<ul class="item">
+										<li><a href=""><b>Hàng mới về</b></a></li>
+										<li><a href="">Hàng mới về</a></li>
+										<li><a href="">Hyper Prep</a></li>
+										<li><a href="">Knit wear</a></li>
+										<li><a href="">City Nomad</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div>
+					</li>
+					<li class="menu-item">
+						<a class="menu__link" href="">BÉ GÁI</a>
+						<div class="menu__sub-menu">
+							<div class="sub-menu-item">
+								<div class="sub-menu-item1">
+									<ul class="item">
+										<li><a href=""><b>Hàng mới về</b></a></li>
+										<li><a href="">Hàng mới về</a></li>
+										<li><a href="">Hyper Prep</a></li>
+										<li><a href="">Knit wear</a></li>
+										<li><a href="">City Nomad</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div>
+					</li>
+					<li class="menu-item">
+						<a class="menu__link" href="">BÉ TRAI </a>
+						<div class="menu__sub-menu">
+							<div class="sub-menu-item">
+								<div class="sub-menu-item1">
+									<ul class="item">
+										<li><a href=""><b>Hàng mới về</b></a></li>
+										<li><a href="">Hàng mới về</a></li>
+										<li><a href="">Hyper Prep</a></li>
+										<li><a href="">Knit wear</a></li>
+										<li><a href="">City Nomad</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div>
+					</li>
+
+					<li class="menu-item">
+						<a class="menu__link" href="">CANIFA S</a>
+						<div class="menu__sub-menu">
+							<div class="sub-menu-item">
+								<div class="sub-menu-item3">
+									<ul class="item">
+										<li><a href=""><b>Hàng mới về</b></a></li>
+										<li><a href="">Hàng mới về</a></li>
+										<li><a href="">Hyper Prep</a></li>
+										<li><a href="">Knit wear</a></li>
+										<li><a href="">City Nomad</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div>
+
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="banner">
+		<div class="container d-flex justify-between align-center">
+
+		</div>
+	</div>
+</body>
+
+</html>
