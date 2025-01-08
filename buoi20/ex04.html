@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const products = [
+            {id:1, title: "product A", price:200},
+            {id:2, title: "product B", },
+            {id:3, title: "product C", price:300},
+
+        ];
+        function validationProduct(product){
+                  if(!product.price || typeof product.price !== "number" || product.price !== product.price || product.price < 0){
+                    return false;
+                  }else{
+                    return true;
+                  }
+        }
+        for(let i =0; i<products.length; i++){
+           !validationProduct(products[i]) && console.log(i);
+        }
+
+    </script>
+</body>
+</html>
