@@ -93,3 +93,73 @@ function convertNested(arr) {
 
 const categoriesNested = convertNested(categories);
 console.log(categoriesNested);
+// bai 2
+const categories1 = [
+	{
+		id: 1,
+		name: "Electronics",
+		children: [
+			{
+				id: 2,
+				name: "Laptops",
+				children: [
+					{
+						id: 3,
+						name: "Apple",
+					},
+					{
+						id: 4,
+						name: "Dell",
+					},
+				],
+			},
+			{
+				id: 5,
+				name: "Headphones",
+			},
+		],
+	},
+	{
+		id: 6,
+		name: "Books",
+		children: [
+			{
+				id: 7,
+				name: "Fiction",
+				children: [
+					{
+						id: 8,
+						name: "Thrillers",
+					},
+					{
+						id: 9,
+						name: "Mystery",
+					},
+				],
+			},
+			{
+				id: 10,
+				name: "Non-Fiction",
+			},
+		],
+	},
+];
+
+function flattenCategories(arr, parentId = 0) {
+	let flatArray = [];
+	
+	arr.forEach(category => {
+	  const { children, ...rest } = category; 
+	  flatArray.push({ ...rest, parentId });
+	  
+	  if (children && children.length > 0) {
+		flatArray = flatArray.concat(flattenCategories(children, category.id));
+	  }
+	});
+	
+	return flatArray;
+  }
+  
+  const result1 = flattenCategories(categories1);
+  console.log(result1);
+  
